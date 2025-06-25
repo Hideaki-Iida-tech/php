@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注文フォーム</title>
+  </head>
+  <body>
+    <form action="result.php" method="POST">
+      <label for="name">お名前：</label>
+      <input type="text" name="name" id="name" /><br />
+      <label for="">ご希望商品：</label>
+      <input type="radio" name="set" value="Aセット" />Aセット
+      <input type="radio" name="set" value="Bセット" />Bセット
+      <input type="radio" name="set" value="Cセット" />Cセット<br />
+      <label for="">注文数</label
+      ><input
+        type="number"
+        name="quantity"
+        min="1"
+        max="20"
+        step="1"
+        value="1"
+      /><br />
+      <input type="submit" value="送信" />
+    </form>
+  </body>
+</html>
